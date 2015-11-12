@@ -100,6 +100,8 @@
               }
               width = Math.max($shadow.outerWidth(), minWidth);
               $e.width(width);
+            } else {
+              $shadow.css({'width': $e.width()});
             }
             return options.postGrowCallback($e);
           };
