@@ -93,6 +93,9 @@
           # outerWidth is width with padding
           width = Math.max $shadow.outerWidth(), minWidth
           $e.width width
+        
+        else
+          $shadow.css({'width': $e.width()})
 
         options.postGrowCallback $e
 
