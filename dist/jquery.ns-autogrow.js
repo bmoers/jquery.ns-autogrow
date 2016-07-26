@@ -88,7 +88,7 @@
                 val += '<br />';
               }
             }
-            $shadow.html(val);
+            $shadow[0].innerHTML = val;
             if (options.vertical === true) {
               height = Math.max($shadow.height() + heightPadding, minHeight);
               $e.height(height);
